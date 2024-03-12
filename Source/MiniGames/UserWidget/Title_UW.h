@@ -24,16 +24,10 @@ protected:
 	TObjectPtr<class UTextBlock> HitAndBlowText;
 
 	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
-	TObjectPtr<class UTextBlock> SlidePuzzleText;
-
-	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
 	TObjectPtr<class UTextBlock> QuitText;
 
 	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
 	TObjectPtr<class UButton> HitAndBlowButton;
-
-	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
-	TObjectPtr<class UButton> SlidePuzzleButton;
 
 	UPROPERTY(BlueprintReadWrite, meta = (BindWidget))
 	TObjectPtr<class UButton> QuitButton;
@@ -60,7 +54,6 @@ private:
 	enum class ESelect
 	{
 		HIT_AND_BLOW,
-		SLIDE_PUZZLE,
 		QUIT,
 	};
 
