@@ -45,18 +45,6 @@ void UTitle_UW::OnButton()
 			false
 		);
 		break;
-	case UTitle_UW::ESelect::SLIDE_PUZZLE:
-		GetOwningPlayer()->GetWorldTimerManager().SetTimer
-		(
-			DoneHandle,
-			[&]()
-			{
-				UGameplayStatics::OpenLevel(GetWorld(), "SlidePuzzle");
-			},
-			DoneRate,
-			false
-		);
-		break;
 	case UTitle_UW::ESelect::QUIT:
 		GetOwningPlayer()->GetWorldTimerManager().SetTimer
 		(
@@ -84,13 +72,10 @@ void UTitle_UW::OnSelect(const FInputActionValue& Value)
 	switch (Select)
 	{
 	case UTitle_UW::ESelect::HIT_AND_BLOW:
-		Select = num > 0 ? ESelect::SLIDE_PUZZLE : ESelect::QUIT;
-		break;
-	case UTitle_UW::ESelect::SLIDE_PUZZLE:
-		Select = num > 0 ? ESelect::QUIT : ESelect::HIT_AND_BLOW;
+		Select = num > 0 ? ESelect::QUIT : ESelect::QUIT;
 		break;
 	case UTitle_UW::ESelect::QUIT:
-		Select = num > 0 ? ESelect::HIT_AND_BLOW : ESelect::SLIDE_PUZZLE;
+		Select = num > 0 ? ESelect::HIT_AND_BLOW : ESelect::HIT_AND_BLOW;
 		break;
 	default:
 		break;
@@ -106,7 +91,6 @@ void UTitle_UW::OnCancel()
 void UTitle_UW::ResetColorToButton()
 {
 	HitAndBlowButton->SetBackgroundColor(White);
-	SlidePuzzleButton->SetBackgroundColor(White);
 	QuitButton->SetBackgroundColor(White);
 }
 
@@ -120,9 +104,6 @@ void UTitle_UW::SetColorButton()
 	{
 	case ESelect::HIT_AND_BLOW:
 		HitAndBlowButton->SetBackgroundColor(Green);
-		break;
-	case ESelect::SLIDE_PUZZLE:
-		SlidePuzzleButton->SetBackgroundColor(Green);
 		break;
 	case ESelect::QUIT:
 		QuitButton->SetBackgroundColor(Green);
