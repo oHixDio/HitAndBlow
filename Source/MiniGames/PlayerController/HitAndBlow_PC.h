@@ -97,26 +97,4 @@ public:
 
 	void NoneAction();
 
-
-	/*
-public:
-	void Setup(TObjectPtr<UInputComponent> MyInputComponent) override;
-	*/
-	/*
-	// -------------------------------------------------- //
-	// -------------------- Inputter  ------------------- //
-	// -------------------------------------------------- //
-	// InputActionにBindするメソッド群
-	// OnOOOOOをテンプレとする
-public:
-	void OnPause(const FInputActionValue& Value);
-
-	void OnDone(const FInputActionValue& Value);
-
-	void OnCancel(const FInputActionValue& Value);
-
-	void OnSelectX(const FInputActionValue& Value);
-
-	void OnSelectY(const FInputActionValue& Value);
-	*/
 };

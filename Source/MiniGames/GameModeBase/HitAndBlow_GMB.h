@@ -17,24 +17,6 @@ class MINIGAMES_API AHitAndBlow_GMB : public AMiniGamesGameModeBase
 {
 	GENERATED_BODY()
 		
-	/*
-	* ----- 12/4 Task -----
-	* 1  GameFailed時にCorrectPinの生成								// OK
-	* 2  Answerトリガー後、OKUIの表示									// OK
-	* 3  OKUIの表示に伴い、TurnMarkカーソルをResultCursorに変更する		// OK
-	* 4  Pinの生成中はカーソルを非表示、入力をポーズのみにする			// OK
-	* ----- 12/5 Task -----
-	* 5  BGMの追加
-	* 6  SEの追加
-	* 7  タイトルの調整												// OK
-	* ----- 12/6 Task -----
-	* 8  ２プレイヤー対応
-	* ----- 12/7 Task -----
-	* HitAndBlow制作日誌作成
-	* GitHubにビルドデータとソースコードデータ載せる // 時間あれば
-	* ----- 12/8 Task -----
-	* NextGameDevelopment
-	*/
 	
 
 protected:

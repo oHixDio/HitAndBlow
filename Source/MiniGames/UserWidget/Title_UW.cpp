@@ -21,10 +21,6 @@ void UTitle_UW::NativeConstruct()
 
 UTitle_UW::UTitle_UW()
 {
-	//static constructorhelpers::fobjectfinder< usoundbase > find_sound(text("soundwave'/game/sound/se_ok.se_ok'"));
-	//if (find_sound.succeeded()) {
-	//	sound_obj = find_sound.object;
-	//}
 }
 
 void UTitle_UW::OnButton()
