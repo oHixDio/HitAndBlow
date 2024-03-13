@@ -35,19 +35,6 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category = "UI|HitAndBlow")
 	TObjectPtr<class UUserWidget> ResultUI;
 
-	/*
-	UPROPERTY(EditAnywhere, Category = "UI|HitAndBlow")
-	TSubclassOf<class UUserWidget> WinUIClass;
-
-	UPROPERTY(VisibleAnywhere, Category = "UI|HitAndBlow")
-	class UUserWidget* WinUI;
-
-	UPROPERTY(EditAnywhere, Category = "UI|HitAndBlow")
-	TSubclassOf<class UUserWidget> LoseUIClass;
-
-	UPROPERTY(VisibleAnywhere, Category = "UI|HitAndBlow")
-	class UUserWidget* LoseUI;
-	*/
 public:
 
 	AHitAndBlow_HUD();
@@ -60,11 +47,7 @@ public:
 	const class UUserWidget* GetDetailUI() const;
 
 	const TObjectPtr<class UUserWidget> GetResultUI() const;
-	/*
-	const class UUserWidget* GetWinUI() const;
 
-	const class UUserWidget* GetLoseUI() const;
-	*/
 public:
 	virtual void Setup() override;
 

@@ -183,25 +183,4 @@ private:
 	/// w‚µ‚Ä‚¢‚È‚¢ê‡A’ÊíCursor‚ğ•\¦
 	/// </summary>
 	void TargetTurnMark();
-	/*
-	void Setup();
-
-	void TurnInit(int CurTurn);
-
-	void ChangeCurrentChoisePoints(int CurrentTurn);
-
-	const int ChangeColCursorLocation(float Value);
-
-	const int ChangeRowCursorLocation(float Value);
-
-	void ChangeTurnMarkLocation(int CurrentTurn);
-
-	void CanTargetTurnMark(int CurrentTurn);
-
-	void TargetTurnMark(bool bIsTarget);
-
-	void CheckTargetTurnMark();
-
-	void ColCursorIncrement();
-	*/
 };

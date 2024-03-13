@@ -37,8 +37,6 @@ void AHitAndBlow_GMB::BeginPlay()
 void AHitAndBlow_GMB::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	//float Rate = GetWorldTimerManager().GetTimerRemaining(AnimationTimerHandle);
-	//UE_LOG(LogTemp, Warning, TEXT("%f"), Rate);
 }
 
 // -------------------------------------------------- //
